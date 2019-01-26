@@ -22,7 +22,7 @@ pod 'InterruptibleAction'
 
 ## Author
 
-gkaimakas@gmail.com, gkaimakas@gmail.com
+George Kaimakas, gkaimakas@gmail.com
 
 ## License
 
