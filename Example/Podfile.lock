@@ -1,0 +1,36 @@
+PODS:
+  - InterruptibleAction (0.1.0):
+    - ReactiveSwift
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
+
+DEPENDENCIES:
+  - InterruptibleAction (from `../`)
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - ReactiveSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+    - ReactiveSwift
+    - Result
+
+EXTERNAL SOURCES:
+  InterruptibleAction:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  InterruptibleAction: 86840ce822b42188329f618fa53b77251bcf4306
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+
+PODFILE CHECKSUM: c9a4f4982be9acda431ab45fab5abfae758f9d50
+
+COCOAPODS: 1.5.3

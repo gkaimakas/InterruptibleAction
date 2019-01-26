@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		0E339A03D75163AEB130D968 /* Pods-InterruptibleAction_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterruptibleAction_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InterruptibleAction_Example/Pods-InterruptibleAction_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		16AD0942733430C7354411A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		1B5173E991F1A36F54FB50C4 /* InterruptibleAction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = InterruptibleAction.podspec; path = ../InterruptibleAction.podspec; sourceTree = "<group>"; };
+		16AD0942733430C7354411A7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1B5173E991F1A36F54FB50C4 /* InterruptibleAction.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = InterruptibleAction.podspec; path = ../InterruptibleAction.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		50FA32FA664AF06EC926AFFD /* Pods_InterruptibleAction_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterruptibleAction_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* InterruptibleAction_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterruptibleAction_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		6253DA4C0C598952BBCB7760 /* Pods-InterruptibleAction_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterruptibleAction_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-InterruptibleAction_Example/Pods-InterruptibleAction_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6A63D6A85D4975D97D278CBC /* Pods-InterruptibleAction_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterruptibleAction_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-InterruptibleAction_Tests/Pods-InterruptibleAction_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A456ADA679717CD486308AC5 /* Pods_InterruptibleAction_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InterruptibleAction_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7759276157E8958FB77B7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C7759276157E8958FB77B7F0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CF640BC34ECA78130EED61B2 /* Pods-InterruptibleAction_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InterruptibleAction_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-InterruptibleAction_Tests/Pods-InterruptibleAction_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 96LJ93WQBU;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 96LJ93WQBU;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -294,12 +296,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-InterruptibleAction_Example/Pods-InterruptibleAction_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/InterruptibleAction/InterruptibleAction.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InterruptibleAction.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -506,6 +512,7 @@
 			baseConfigurationReference = 0E339A03D75163AEB130D968 /* Pods-InterruptibleAction_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = InterruptibleAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -521,6 +528,7 @@
 			baseConfigurationReference = 6253DA4C0C598952BBCB7760 /* Pods-InterruptibleAction_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				INFOPLIST_FILE = InterruptibleAction/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -535,6 +543,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CF640BC34ECA78130EED61B2 /* Pods-InterruptibleAction_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -557,6 +566,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6A63D6A85D4975D97D278CBC /* Pods-InterruptibleAction_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 96LJ93WQBU;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

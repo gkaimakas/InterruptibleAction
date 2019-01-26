@@ -2,6 +2,8 @@ use_frameworks!
 
 target 'InterruptibleAction_Example' do
   pod 'InterruptibleAction', :path => '../'
+  
+  pod 'ReactiveSwift' 
 
   target 'InterruptibleAction_Tests' do
     inherit! :search_paths
